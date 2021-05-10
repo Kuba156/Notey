@@ -1,0 +1,23 @@
+allprojects {
+    repositories {
+        google()
+    }
+}
+
+ext {
+    //Android libs
+
+    //Third party libs
+    dagger_ver = '2.35.1'
+    recycler_view_ver = '1.1.0'
+    room_ver = "2.3.0"
+
+    mainApplication = [
+            'dagger':           "com.google.dagger:dagger:$dagger_ver",
+            'daggerCompiler':   "com.google.dagger:dagger-compiler:$dagger_ver",
+            'recyclerView':     "androidx.recyclerview:recyclerview:$recycler_view_ver",
+            'room':             "androidx.room:room-runtime:$room_ver",
+            'roomExtension':    "androidx.room:room-ktx:$room_ver",
+            'roomCompiler':     "androidx.room:room-ktx:$room_ver"
+    ]
+}
