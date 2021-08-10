@@ -6,18 +6,33 @@ allprojects {
 
 ext {
     //Android libs
+    fragment_ver = '1.3.2'
+    navigation_ver = '2.3.5'
 
     //Third party libs
-    dagger_ver = '2.35.1'
+    dagger_ver = '2.11'
     recycler_view_ver = '1.1.0'
-    room_ver = "2.3.0"
+    room_ver = '2.3.0'
+    kotlin_coroutines_ver = '1.4.3'
+
+    javaxAnnotations_ver = '1.0'
+    javaxInject_ver = '1'
 
     mainApplication = [
-            'dagger':           "com.google.dagger:dagger:$dagger_ver",
-            'daggerCompiler':   "com.google.dagger:dagger-compiler:$dagger_ver",
-            'recyclerView':     "androidx.recyclerview:recyclerview:$recycler_view_ver",
-            'room':             "androidx.room:room-runtime:$room_ver",
-            'roomExtension':    "androidx.room:room-ktx:$room_ver",
-            'roomCompiler':     "androidx.room:room-ktx:$room_ver"
+            kotlin:                     "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            fragment:                   "androidx.fragment:fragment-ktx:$fragment_ver",
+            dagger:                     "com.google.dagger:dagger:$dagger_ver",
+            daggerCompiler:             "com.google.dagger:dagger-compiler:$dagger_ver",
+            recyclerView:               "androidx.recyclerview:recyclerview:$recycler_view_ver",
+            room:                       "androidx.room:room-runtime:$room_ver",
+            roomExtension:              "androidx.room:room-ktx:$room_ver",
+            roomCompiler:               "androidx.room:room-ktx:$room_ver",
+            kotlinCoroutines:           "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_ver",
+            kotlinCoroutinesAndroid:    "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_ver",
+            navFragment:                "androidx.navigation:navigation-fragment-ktx:$navigation_ver",
+            navUI:                      "androidx.navigation:navigation-ui-ktx:$navigation_ver",
+            navDynamicFeat:             "androidx.navigation:navigation-dynamic-features-fragment:$navigation_ver",
+            javaxAnnotation:            "javax.annotation:jsr250-api:$javaxAnnotations_ver",
+            javaxInject:                "javax.inject:javax.inject:$javaxInject_ver"
     ]
 }
